@@ -1,4 +1,22 @@
 # Order does matter
 [requires]
-catch2/2.13.3
+zlib/1.2.11
+catch2/2.5.0@bincrafters/stable
 libcurl/7.70.0
+
+[build_requires]
+poco/[>1.0,<1.9]
+7zip/16.00
+
+[options]
+poco:shared=True
+openssl:shared=True
+
+[generators]
+xcode
+cmake
+qmake
+
+[imports]
+bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my local "bin" folder
+lib, *.dylib* -> ./bin # Copies all dylib files from packages lib folder to my local "bin" folder
