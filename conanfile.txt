@@ -2,7 +2,7 @@
 [requires]
 zlib/1.2.11
 catch2/2.5.0@bincrafters/stable
-libcurl/7.70.0
+libcurl/7.79.1
 
 [build_requires]
 poco/[>1.0,<1.8]
